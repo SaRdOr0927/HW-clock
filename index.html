@@ -4,34 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/pngtree-vector-clock-icon-png-image_865317.jpg" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Soat-Taymer</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
     <div class="tabsPanel">
+
         <!-- Tablar -->
         <ul class="tabsLinks">
-            <li class="tabsItem "><a href="#" class="tabsLink">Часы</a></li>
-            <li class="tabsItem active">
+            <li class="tabsItem active" id="h"><a href="#" class="tabsLink" >Часы</a></li> 
+            <li class="tabsItem " id="s">
                 <a href="#" class="tabsLink">Секундомер
                     <!-- Sekundomer ishlayotganini bildirib turadi
                     O`ziga ishlashini bildirayotgan active classini oladi
                     active - sekundomer ishlayapti
                     active_clear - Sekundomer toxtatilgan ammo malumot ochirilmagan
                     -->
-                    <span class="tabsLink__span "></span>
+                    <span class="tabsLink__span"></span>
                 </a>
             </li>
         </ul>
         <!-- Tablar -->
         <div class="tabsContent">
             <!-- Ko`rsatkichli soat -->
-            <div class="clock tabsContentItem ">
-                <div class="arrowClock">
+            <div class="clock tabsContentItem active" id="soat">
+                <div class="arrowClock ">
                     <!-- Soat -->
-                    <div class="arrowClockNumber">
+                    <div class="arrowClockNumber ">
                         <div class="arrowClockNumber__num arrowClockNumber__num_12">12</div>
                         <div class="arrowClockNumber__arr arrowClockNumber__arr_1"></div>
                         <div class="arrowClockNumber__arr arrowClockNumber__arr_2"></div>
@@ -63,7 +65,7 @@
 
             Vazifa: Rekursiya yordamida Date()siz ishlaydigan sekundomer yasash   
              -->
-            <div class="stopwatch tabsContentItem active">
+            <div class="stopwatch tabsContentItem " id="sekunt_2">
                 <div class="stopwatch__clock">
 
                     <div class="stopwatch__clock-description">
